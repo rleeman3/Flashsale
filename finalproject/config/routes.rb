@@ -1,4 +1,23 @@
 Rails.application.routes.draw do
+  resources :restaurants
+
+  get 'welcome/index'
+  
+  root 'welcome#index'
+
+
+  # get 'profiles/index'
+
+  # get 'profiles/show'
+
+  # get 'restaurants/index'
+
+  # get 'restaurants/new'
+
+  # get 'restaurants/show'
+
+  # get 'restaurants/edit'
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
